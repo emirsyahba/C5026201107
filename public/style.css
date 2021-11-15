@@ -1,0 +1,206 @@
+.container-cst {
+    width: 1283px;
+    margin: 200px auto;
+}
+
+.content .fotoproduct {
+    width: 497px;
+    height: 497px;
+    margin-bottom: 20px;
+}
+
+.content .detailproduct img {
+    width: 85.83px;
+    height: 85.83px;
+    border-radius: 5%;
+}
+
+.detailproduct {
+    width: 495px;
+    margin-bottom: 20px;
+}
+
+.button .favorite {
+    width: 248.59px;
+    height: 23px;
+    background-color: transparent;
+    border: none;
+    border-right: .2px solid #777777;
+    color: #333333;
+}
+
+.button .bagikan {
+    width: 248.59px;
+    height: 23px;
+    background-color: transparent;
+    border: none;
+    color: #333333;
+}
+
+.row .head h1 {
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.reviewbar .fa-star {
+    color: #FFC53E;
+    font-size: 14px;
+}
+
+.reviewbar .ulasan {
+    margin-left: 3px;
+    font-size: 14px;
+    margin-right: -4px;
+}
+
+.reviewbar .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #dddddd;
+    border-radius: 100%;
+}
+
+.reviewbar .terjual {
+    margin-left: -4px;
+    font-size: 14px;
+}
+
+.superseller {
+    width: 101px;
+    height: 20px;
+    margin-bottom: 6px;
+}
+
+.harga {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #333;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.stok {
+    font-size: 14px;
+    line-height: 1.414px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 45px;
+    margin-left: 15px;
+    font-weight: 400;
+}
+
+.detailpengiriman {
+    margin-top: 35px;
+    margin-bottom: 75px;
+}
+
+.pengiriman {
+    min-width: 96px;
+    margin-right: 40px;
+    margin-top: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.detailpengiriman .col-10 .lokasi {
+    min-width: 96px;
+    margin-right: 20px;
+    margin-top: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color: #BBBBBB;
+}
+
+.sellercity {
+    color: #333333;
+    font-size: 14px;
+}
+
+.detailpengiriman .col-10 .tujuan {
+    min-width: 96px;
+    margin-right: 20px;
+    margin-top: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color: #BBBBBB;
+}
+
+.buyercity {
+    color: #333333;
+    font-size: 14px;
+}
+
+.detailpengiriman .col-10 .changeaddress {
+    margin-top: 48px;
+    margin-left: -65px;
+
+}
+
+.col-2 .chat {
+    height: 52px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 135.67px;
+    border: 2px solid black;
+}
+
+.col-5 .cart {
+    height: 52px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 18px;
+    width: 263.83px;
+    border: 2px solid black;
+}
+
+.col-5 .buy {
+    height: 52px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    width: 301.52px;
+}
+
+.pengingat {
+    color: #2E2E2E;
+}
+
+.tekspengingat {
+    color: #333333;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: -22px;
+}
+
+.promo {
+    margin-top: 25px;
+}
+
+.fotopromo {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+
+}
+
+.detailpromo {
+    margin-top: 25px;
+    margin-left: 0px;
+}
+
+.tekspromo {
+    min-width: 96px;
+    margin-right: 40px;
+    margin-left: 28px;
+    margin-top: -3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.teksdetailpromo {
+    color: #999999;
+    margin-top: 5px;
+    margin-left: 28px;
+}
