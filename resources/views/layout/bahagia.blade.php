@@ -470,7 +470,7 @@
                     <a href="#"><i class='bx bx-desktop'></i> Praktikum</a>
                 </li>
             </ul>
-            <div class="footer mb-20">
+            <div class="footer">
                 <div class="copyright" style="text-align: center">
                     © 2021 <br> Emirsyah Bayu Aji 5026201107
                 </div>
