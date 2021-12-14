@@ -34,7 +34,7 @@
             line-height: 1.8;
             font-weight: normal;
             background: #fff;
-            color: #000;
+            color: #0F3057;
         }
 
         a {
@@ -332,18 +332,19 @@
         }
 
         .footer p {
-            color: rgba(255, 255, 255, 0.5);
+            color: #000;
         }
 
         .form-control {
             height: 40px !important;
-            background: #fff;
+            background: #dee2e6;
             color: #000;
+
             font-size: 13px;
             border-radius: 4px;
             -webkit-box-shadow: none !important;
             box-shadow: none !important;
-            border: transparent;
+            border-color: #00587A;
         }
 
         .form-control:focus,
@@ -353,22 +354,22 @@
 
         .form-control::-webkit-input-placeholder {
             /* Chrome/Opera/Safari */
-            color: rgba(255, 255, 255, 0.5);
+            color: #0F3057
         }
 
         .form-control::-moz-placeholder {
             /* Firefox 19+ */
-            color: rgba(255, 255, 255, 0.5);
+            color: #0F3057
         }
 
         .form-control:-ms-input-placeholder {
             /* IE 10+ */
-            color: rgba(255, 255, 255, 0.5);
+            color: #0F3057
         }
 
         .form-control:-moz-placeholder {
             /* Firefox 18- */
-            color: rgba(255, 255, 255, 0.5);
+            color: #0F3057
         }
 
         .subscribe-form .form-control {
@@ -379,7 +380,7 @@
         .bxl-github,
         .bxl-linkedin {
             font-size: 17px;
-            color: #E7E7DE;
+            color: #0F3057;
         }
 
         #tabel {
@@ -416,10 +417,10 @@
         #kotak {
             width: 100%;
             margin: 0 auto;
-            padding-top: 30px;
+            padding-top: 20px;
             padding-right: 30px;
-            padding-bottom: 30px;
-            padding-left: 50px;
+            padding-bottom: 20px;
+            padding-left: 30px;
             border: solid #00587A 2px;
             border-radius: 15px;
             background-color: white;
@@ -434,7 +435,28 @@
             padding-left: 50px;
             border: solid #00587A 2px;
             border-radius: 15px;
-            background-color: #E7E7DE;
+            background-color: #fff;
+        }
+
+        .page-item.active .page-link {
+            z-index: 3;
+            color: #fff;
+            background-color: #0F3057;
+            border-color: #0F3057;
+        }
+
+        .page-link {
+            position: relative;
+            display: block;
+            color: #0F3057;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        .footer .text-center .fixed-bottom {
+            color: #0F3057;
         }
 
     </style>
@@ -464,23 +486,9 @@
                     <a href="/pendapatan"><i class='bx bxs-wallet'></i> Pendapatan</a>
                 </li>
                 <li>
-                    <a href="#"><i class='bx bxs-edit-alt'></i> Minggu Depan</a>
-                </li>
-                <li>
-                    <a href="#"><i class='bx bx-desktop'></i> Praktikum</a>
+                    <a href="/laptop"><i class='bx bx-desktop'></i> Laptop</a>
                 </li>
             </ul>
-            <div class="footer">
-                <div class="copyright" style="text-align: center">
-                    © 2021 <br> Emirsyah Bayu Aji 5026201107
-                </div>
-                <div class="socmed d-flex justify-content-center">
-                    <a target="_blank" href="https://www.instagram.com/emirsyahba/"><i class='bx bxl-instagram'></i></a>
-                    <a target="_blank" href="https://github.com/emirsyahba"><i class='bx bxl-github'></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/emirsyah-b-98760711a/"><i
-                            class='bx bxl-linkedin'></i></a>
-                </div>
-            </div>
         </nav>
 
         <!-- Page Content  -->
@@ -490,6 +498,19 @@
             @section('konten')
 
             @show
+            <div class="footer text-center mt-auto mb-auto">
+                <footer class="container-fluid mb-auto mt-auto w-100">
+                    <div class="row text-center"> <span> © 2021</span> </div>
+                    <div class="row text-center"> <span>Emirsyah Bayu Aji 5026201107</span> </div>
+                    <div class="socmed d-flex justify-content-center">
+                        <a target="_blank" href="https://www.instagram.com/emirsyahba/"><i
+                                class='bx bxl-instagram'></i></a>
+                        <a target="_blank" href="https://github.com/emirsyahba"><i class='bx bxl-github'></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/emirsyah-b-98760711a/"><i
+                                class='bx bxl-linkedin'></i></a>
+                    </div>
+                </footer>
+            </div>
         </div>
     </div>
 

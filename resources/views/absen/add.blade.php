@@ -1,6 +1,6 @@
 @extends('layout.bahagia')
 
-@section('title', 'Menambah Absen')
+@section('title', 'Menambah Data Absensi')
 @section('judulhalaman', 'Tambah Data Absensi')
 
 @section('konten')

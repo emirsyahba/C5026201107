@@ -1,6 +1,6 @@
 @extends('layout.bahagia')
 
-@section('title', 'Mengedit Data Absensi')
+@section('title', 'Mengedit Data Pegawai')
 @section('judulhalaman', 'Edit Data Pegawai')
 
 @section('konten')
@@ -75,5 +75,5 @@
                 </table>
             </form>
         @endforeach
-        <div>
-        @endsection
+    </div>
+@endsection

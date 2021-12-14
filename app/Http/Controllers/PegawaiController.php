@@ -12,11 +12,29 @@ class PegawaiController extends Controller
     {
         // DB::table('')->get();
         // mengambil data dari table pegawai
-        $pegawai = DB::table('pegawai')->get(); //hasil get() adalah Array of Object [object][]
+        // $pegawai = DB::table('pegawai')->get(); //hasil get() adalah Array of Object [object][]
+
+        $pegawai = DB::table('pegawai')->paginate(5);
 
         // mengirim data pegawai ke view index
         return view('pegawai.index', ['pegawai' => $pegawai]); //teknik komunikasi/passing value antara controller dan view
     }
+
+    public function cari(Request $request)
+    {
+        // menangkap data pencarian
+        $cari = $request->cari;
+
+        // mengambil data dari table pegawai sesuai pencarian data
+        $pegawai = DB::table('pegawai')
+            ->where('pegawai_nama', 'like', "%" . $cari . "%")
+            ->orWhere('pegawai_alamat', 'like', "%" . $cari . "%")
+            ->paginate();
+
+        // mengirim data pegawai ke view index
+        return view('pegawai.index', ['pegawai' => $pegawai]);
+    }
+
     // method untuk menampilkan view form tambah pegawai
     public function tambah()
     {
@@ -46,6 +64,17 @@ class PegawaiController extends Controller
         // passing data pegawai yang didapat ke view edit.blade.php
         return view('pegawai.edit', ['pegawai' => $pegawai]);
     }
+
+    // method untuk melihat detail data pegawai
+    public function detail($id)
+    {
+        // mengambil data pegawai berdasarkan id yang dipilih
+        $pegawai = DB::table('pegawai')->where('pegawai_id', $id)->get();
+        // passing data pegawai yang didapat ke view edit.blade.php
+        return view('pegawai.detail', ['pegawai' => $pegawai]);
+    }
+
+
     // update data pegawai
     public function update(Request $request)
     {

@@ -1,58 +1,56 @@
 @extends('layout.bahagia')
 
-@section('title', 'Menambah Data Pegawai')
-@section('judulhalaman', 'Tambah Data Pegawai')
+@section('title', 'Menambah Data Laptop')
+@section('judulhalaman', 'Tambah Data Laptop')
 
 @section('konten')
     <div class="kembali">
-        <a href="/pegawai" type="button" class="btn btn-primary mb-3">Kembali</a>
+        <a href="/laptop" type="button" class="btn btn-primary mb-3">Kembali</a>
     </div>
     <div id="box">
-        <form action="/pegawai/store" method="post" class="table-responsive">
+        <form action="/laptop/store" method="post" class="table-responsive">
             {{ csrf_field() }}
             <table class="table table-borderless">
                 <tr>
                     <td>
-                        <label for="nama">Nama</label>
+                        <label for="merk">Merk</label>
                     </td>
                     <td>
                         <label>:</label>
                     </td>
                     <td>
-                        <input class="container form-control" type="text" name="nama" required="required">
+                        <input class="container form-control" type="text" name="merk" required="required">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="jabatan">Jabatan</label>
+                        <label for="stock">Stock</label>
                     </td>
                     <td>
                         <label>:</label>
                     </td>
                     <td>
-                        <input class="container form-control" type="text" name="jabatan" required="required">
+                        <input class="container form-control" type="text" name="stock" required="required">
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <label for="umur">Umur</label>
-                    </td>
-                    <td>
-                        <label>:</label>
-                    </td>
-                    <td>
-                        <input class="container form-control" type="number" name="umur" required="required">
-                    </td>
-                </tr>
                 <tr>
                     <td>
-                        <label for="alamat">Alamat</label>
+                        <label for="tersedia">Tersedia</label>
                     </td>
                     <td>
                         <label>:</label>
                     </td>
                     <td>
-                        <textarea class="container form-control" type="number" name="alamat" required="required"></textarea>
+                        <input type="radio" id="hadir" name="tersedia" value="Y">
+                        <label for="hadir">
+                            Ya
+                        </label>
+                        <br>
+                        <input type="radio" id="html" name="tersedia" value="T">
+                        <label for="html">
+                            Tidak
+                        </label>
                     </td>
                 </tr>
                 <tr>
