@@ -73,7 +73,6 @@ class PendapatanController extends Controller
     }
     public function detail($id)
     {
-
         // mengambil data pendapatan berdasarkan id yang dipilih
         $pendapatan = DB::table('pendapatan')
             ->join('pegawai', 'pendapatan.IDPegawai', '=', 'pegawai.pegawai_id')

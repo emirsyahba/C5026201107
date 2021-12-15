@@ -69,3 +69,9 @@ Route::post('/laptop/update', 'LaptopController@update');
 Route::get('/laptop/hapus/{id}', 'LaptopController@hapus');
 Route::get('/laptop/cari', 'LaptopController@cari');
 Route::get('/laptop/view/{id}', 'LaptopController@detail');
+
+//route EAS 'keranjangbelanja'
+Route::get('/keranjangbelanja', 'KeranjangBelanjaController@index');
+Route::get('/keranjangbelanja/tambah', 'KeranjangBelanjaController@tambah');
+Route::post('/keranjangbelanja/store', 'KeranjangBelanjaController@store');
+Route::get('/keranjangbelanja/hapus/{id}', 'KeranjangBelanjaController@hapus');

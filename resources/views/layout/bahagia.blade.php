@@ -488,6 +488,9 @@
                 <li>
                     <a href="/laptop"><i class='bx bx-desktop'></i> Laptop</a>
                 </li>
+                <li>
+                    <a href="/keranjangbelanja"><i class='bx bx-basket'></i> Keranjang Belanja</a>
+                </li>
             </ul>
         </nav>
 
